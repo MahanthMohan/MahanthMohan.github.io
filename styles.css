@@ -1,0 +1,91 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.header {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* The recommended font weight for Poppins */
+    text-align: center;
+    align-content: center;
+    padding-bottom: 30;
+}
+
+.display-3 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+.display-6 {
+    font-weight: normal;
+}
+
+.lead {
+    color: #fff;
+    font-weight: 400;
+}
+
+.project {
+    border-radius: 1.1rem;
+    width: 60%;
+}
+
+.statbtn {
+    border-radius: 1.1rem;
+    width: 200px;
+}
+
+.jumbotron {
+    color: #fff;
+    background-color: #6e72fc;
+    background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);  
+}
+
+.projects {
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.contact {
+    text-align: center;
+    align-self: center;
+    padding: 40px;
+}
+
+.card {
+    border-radius: 16px;
+    background-image: linear-gradient(315deg, #bebebe 0%, #a9a9a9 74%);
+}
+
+.card-img-top {
+    padding-bottom: 15px;
+}
+
+.stats {
+    text-align: center;
+    align-self: center;
+    padding: 7px;
+}
+
+.statsChart {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+.bi {
+    padding-right: 5px;
+}
