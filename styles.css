@@ -1,3 +1,5 @@
+/* Global Styling */
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -5,15 +7,6 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-}
-
-.header {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300; /* The recommended font weight for Poppins */
-    text-align: center;
-    align-content: center;
-    padding-bottom: 30;
 }
 
 .display-3 {
@@ -34,14 +27,17 @@ body {
     font-weight: 400;
 }
 
-.project {
-    border-radius: 1.1rem;
-    width: 60%;
-}
+/* End */
 
-.statbtn {
-    border-radius: 1.1rem;
-    width: 200px;
+/* Header Section */
+
+.header {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* The recommended font weight for Poppins */
+    text-align: center;
+    align-content: center;
+    padding-bottom: 30;
 }
 
 .jumbotron {
@@ -50,18 +46,21 @@ body {
     background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);  
 }
 
+/* End */
+
+/* Projects Section */
+
+.project {
+    border-radius: 1.1rem;
+    width: 60%;
+}
+
 .projects {
     text-align: center;
     align-self: center;
     padding: 20px;
     padding-top: 70px;
     padding-bottom: 70px;
-}
-
-.contact {
-    text-align: center;
-    align-self: center;
-    padding: 40px;
 }
 
 .card {
@@ -73,19 +72,40 @@ body {
     padding-bottom: 15px;
 }
 
+/* End */
+
+/* Stats/Statistics Section */
+
 .stats {
     text-align: center;
     align-self: center;
     padding: 7px;
 }
 
+.statbtn {
+    border-radius: 1.1rem;
+    width: 200px;
+}
+
 .statsChart {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 35px;
 }
 
+/* End */
+
+/* Contact Section */
+
+.contact {
+    text-align: center;
+    align-self: center;
+    padding: 40px;
+}
+
 .bi {
     padding-right: 5px;
 }
+
+/* End */
