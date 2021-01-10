@@ -1,9 +1,9 @@
 const endpoint = "https://api.github.com/users/mahanthmohan/repos";
 function getGithubStats() {
+    var languages = [];
+    var frequencies = [];
     // Axios GET request to the GitHub API, to get data of all my repos
     axios({ method: "GET", url: endpoint }).then((res) => {
-        var languages = [];
-        var frequencies = [];
         res.data.map((v) => {
             languages.push(v["language"])
         })
