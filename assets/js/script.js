@@ -7,30 +7,28 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
         .then((data) => { 
             data.map((v) => {
             languages.push(v["language"])
-        }
-    )
+        })
         
     // get the unique elements of the array into a new array called categories
     var categories = [...new Set(languages)].filter(v => v != null)
 
     function elementCount(lst, e) {
-        var count = 0
-        for(var i = 0; i < lst.length; i++) {
-            if(lst[i] == e) {
-                count += 1
-            } else {
-                count += 0
-            }
-        }
-        return count
+	    var count = 0
+	    lst.forEach((v) => {
+		    if (v == e) {
+			    count += 1
+		    }
+		})
+        
+		return count
     }
 
-    for(var k = 0; k < categories.length; k++) {
-        frequencies.push(elementCount(languages, categories[k]))
-    }
+    categories.forEach((category) => {
+			frequencies.push(elementCount(languages, category))
+	})
 
     var ctx = document.getElementById("statsChart")
-    var myDoughnutChart = new Chart(ctx, {
+    var ghStatsChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: categories,
@@ -43,7 +41,9 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
                     "#f43c5c",
                     "#fc0494",
                     "#047cfc",
-                    "#66ff00"
+                    "#66ff00",
+				    "#fc6a03",
+				    "#13eaf5",
                 ],
                 borderColor: "transparent",
                 data: frequencies,
