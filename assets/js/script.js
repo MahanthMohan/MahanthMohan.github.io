@@ -24,8 +24,8 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
     }
 
     categories.forEach((category) => {
-			frequencies.push(elementCount(languages, category))
-	})
+	frequencies.push(elementCount(languages, category))
+    })
 
     var ctx = document.getElementById("statsChart")
     var ghStatsChart = new Chart(ctx, {
