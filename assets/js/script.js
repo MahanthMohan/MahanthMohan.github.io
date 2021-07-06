@@ -16,7 +16,7 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
 	    var count = 0
 	    lst.forEach((v) => {
 		    if (v == e) {
-			    count += 1
+			count += 1
 		    }
 		})
         
@@ -24,8 +24,8 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
     }
 
     categories.forEach((category) => {
-			frequencies.push(elementCount(languages, category))
-	})
+	frequencies.push(elementCount(languages, category))
+    })
 
     var ctx = document.getElementById("statsChart")
     var ghStatsChart = new Chart(ctx, {
@@ -42,8 +42,8 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
                     "#fc0494",
                     "#047cfc",
                     "#66ff00",
-				    "#fc6a03",
-				    "#13eaf5",
+		    "#fc6a03",
+		    "#13eaf5",
                 ],
                 borderColor: "transparent",
                 data: frequencies,
