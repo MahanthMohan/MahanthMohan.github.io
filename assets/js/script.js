@@ -8,6 +8,7 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
             data.map((v) => {
             languages.push(v["language"])
         })
+    })
         
     // get the unique elements of the array into a new array called categories
     var categories = [...new Set(languages)].filter(v => v != null)
@@ -60,5 +61,4 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
             responsive: true,
         },
     });
-})
 })()
