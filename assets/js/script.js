@@ -1,5 +1,5 @@
 const endpoint = "https://api.github.com/users/mahanthmohan/repos";
-function getGithubStats() {
+(function getGithubStats() {
     var languages = [];
     var frequencies = [];
     // Built in fetch GET request to the GitHub API, to get data of all my repos
@@ -61,4 +61,4 @@ function getGithubStats() {
         },
     });
 })
-}
+})()
