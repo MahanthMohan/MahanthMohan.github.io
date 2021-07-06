@@ -16,7 +16,7 @@ const endpoint = "https://api.github.com/users/mahanthmohan/repos";
 	    var count = 0
 	    lst.forEach((v) => {
 		    if (v == e) {
-			    count += 1
+			count += 1
 		    }
 		})
         
