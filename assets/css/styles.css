@@ -63,7 +63,7 @@ body {
 
 .project-btn {
     border-radius: 1.1rem;
-    width: 60%;
+    width: fit-content;
 }
 
 .projects {
@@ -72,18 +72,18 @@ body {
     padding: 20px;
     padding-top: 2.5rem;
     padding-bottom: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.card {
+.project {
     border-radius: 16px;
-    background-image: linear-gradient(315deg, #bebebe 0%, #a9a9a9 74%);
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.card-deck {
-    align-content: center;
+    padding: 1%;
+    background-color: #bbb;
+    flex: 1 0 10px;
+    margin: 10px;
     text-align: center;
 }
 
